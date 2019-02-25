@@ -1,9 +1,10 @@
-
+from queue import Queue
 from solver import *
 
 class SolverDFS(UninformedSolver):
     def __init__(self, gameMaster, victoryCondition):
         super().__init__(gameMaster, victoryCondition)
+
 
     def solveOneStep(self):
         """
@@ -14,17 +15,19 @@ class SolverDFS(UninformedSolver):
         If all game states reachable from a parent state has been explored,
         the next explored state should conform to the specifications of
         the Depth-First Search algorithm.
-
         Returns:
             True if the desired solution state is reached, False otherwise
         """
         ### Student code goes here
-        return True
+
 
 
 class SolverBFS(UninformedSolver):
     def __init__(self, gameMaster, victoryCondition):
         super().__init__(gameMaster, victoryCondition)
+
+
+
 
     def solveOneStep(self):
         """
@@ -35,9 +38,9 @@ class SolverBFS(UninformedSolver):
         If all game states reachable from a parent state has been explored,
         the next explored state should conform to the specifications of
         the Breadth-First Search algorithm.
-
         Returns:
             True if the desired solution state is reached, False otherwise
         """
+
         ### Student code goes here
-        return True
+
